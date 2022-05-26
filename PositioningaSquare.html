@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Positioning Elements with Javascript</title>
+  <script type="text/javascript" src="position.js"></script>
+  <style type="text/css">
+    #buttons {
+      text-align: center;
+    }
+
+    #square {
+      position: absolute;
+      top: 150px;
+      left: 100px;
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      padding: 10px;
+      background-color: #e0e0e0;
+    }
+
+    div {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Positioning Elements</h1>
+  <div id="buttons">
+    <button type="button" name="Left" onclick="pos(-1, 0);">Left</button>
+    <button type="button" name="Right" onclick="pos(1,0);">Right</button>
+    <button type="button" name="Up" onclick="pos(0,-1);">Up</button>
+    <button type="button" name="Down" onclick="pos(0,1);">Down</button>
+    <button type="button" name="hide" onclick="hideSquare();">Hide</button>
+    <button type="button" name="show" onclick="showSquare();">Show</button>
+  </div>
+  <hr>
+  <div id="square">
+    This Square is an absolutely positioned container that you can move using the buttons above
+  </div>
+</body>
+
+</html>
